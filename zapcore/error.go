@@ -25,7 +25,7 @@ import (
 	"sync"
 )
 
-// Encodes the given error into fields of an object. A field with the given
+// encodeError encodes the given error into fields of an object. A field with the given
 // name is added for the error message.
 //
 // If the error implements fmt.Formatter, a field with the name ${key}Verbose

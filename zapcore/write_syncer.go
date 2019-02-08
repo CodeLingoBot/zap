@@ -95,7 +95,7 @@ func NewMultiWriteSyncer(ws ...WriteSyncer) WriteSyncer {
 	return multiWriteSyncer(append([]WriteSyncer(nil), ws...))
 }
 
-// See https://golang.org/src/io/multi.go
+// Write; See https://golang.org/src/io/multi.go
 // When not all underlying syncers write the same number of bytes,
 // the smallest number is returned even though Write() is called on
 // all of them.

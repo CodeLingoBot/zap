@@ -48,7 +48,7 @@ func (cs *counters) get(lvl Level, key string) *counter {
 	return &cs[i][j]
 }
 
-// fnv32a, adapted from "hash/fnv", but without a []byte(string) alloc
+// fnv32a; adapted from "hash/fnv", but without a []byte(string) alloc
 func fnv32a(s string) uint32 {
 	const (
 		offset32 = 2166136261

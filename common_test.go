@@ -32,7 +32,7 @@ func opts(opts ...Option) []Option {
 	return opts
 }
 
-// Here specifically to introduce an easily-identifiable filename for testing
+// withLogger; Here specifically to introduce an easily-identifiable filename for testing
 // stacktraces and caller skips.
 func withLogger(t testing.TB, e zapcore.LevelEnabler, opts []Option, f func(*Logger, *observer.ObservedLogs)) {
 	fac, logs := observer.New(e)
